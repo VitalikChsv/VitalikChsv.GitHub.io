@@ -17,9 +17,6 @@ background-color: #1a1a1a;
 font-family: 'BONY', sans-serif;
 }
 
-.row {
-}
-
 .btn {
 background-color: #2b2e2c;
 color: #d0ded4;
@@ -27,16 +24,31 @@ color: #d0ded4;
 .main-content {
 	margin-top: 0.6rem;
 	padding: 19.6rem;
-	background: url(../img/main-bg.png) center center no-repeat ;
+	background: url(../img/main-bg1.png) center center no-repeat;
 	border-radius: 0.5rem;
 }
 .row-1 {
 	color: #d0ded4;
-	font-size: 2.6rem;
+	font-size: 3.5rem;
 	text-shadow: #637169 0 0 0.4rem;
 }
 .row-2 {
 	color: #d0ded4;
-	font-size: 5.8rem;
+	font-size: 6.8rem;
 	text-shadow: #637169 0 0 0.4rem;
+}
+.row-3 {
+	margin-top: 6rem;
+	color: #d0ded4;
+	font-size: 1.7rem;
+}
+.btn-4 {
+	font-size: 4rem;
+	margin-top: 2rem;
+}
+.br-0 {
+	color: #5770e0;
+}
+.br{
+	color: #5770e0;
 }

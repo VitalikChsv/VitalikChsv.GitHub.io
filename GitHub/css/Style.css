@@ -1,3 +1,17 @@
+
+@font-face {
+    font-family: 'BONY';
+    src: url('BONY.eot');
+    src: url('../fonts/BONY.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BONY.woff2') format('woff2'),
+        url('../fonts/BONY.woff') format('woff'),
+        url('../fonts/BONY.ttf') format('truetype'),
+        url('../fonts/BONY.svg#BONY') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
 background-color: #1a1a1a;
 font-family: 'BONY', sans-serif;

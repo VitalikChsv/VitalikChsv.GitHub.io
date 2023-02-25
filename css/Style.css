@@ -19,6 +19,7 @@ hyphens: auto;
 }
 
 .btn {
+	display: inline-block;
 background-color: #2b2e2c;
 color: #d0ded4;
 transition: all 0.2s;
@@ -209,6 +210,19 @@ a:hover {
 	display: block;
 }
 .btn-4 {
-	display: block;
+	display: inline-block;
 	text-align: center;
+}
+}
+
+@media (max-width: 470px) {
+	.btn-2, .popup-btn {
+margin-top: 1.5rem;
+}
+}
+
+@media (max-width: 600px) {
+	.popup-content {
+		width: 2rem;
+	}
 }

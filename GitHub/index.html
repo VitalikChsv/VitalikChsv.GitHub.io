@@ -48,6 +48,7 @@
   				   <div class="dropdown-content">
   					<a href="Daya.html">Дая</a>
   					<a href="Karen.html">Карен</a>
+  					<a href="Kamiko.html">Камико</a>
   				</div>
   				</div>
   				
@@ -82,17 +83,17 @@
 
     
 <!--Модальные окна-->
-<div class="popup">
+<div class="popup" id="my-popup-1">
 	<div class="popup-dialog">
 		<div class="popup-content">
 			<div class="popup-close">
 				<button class="popup-close-btn">&times;</button>
 				<h4 class="popup-header">
-					Конечно же это сайт!
+					Связь с другим миром!
 				</h4>
 				<div class="main-form">
 					<form action="#" class="form">
-					<p>На этом сайте вы можете:<br>- Найти информацию о персонажах и лоре<br>- посмотреть арты персонажей (больше<br>артов в вк группе)<br><br>Станьте частью этого загадочного мира</p>
+					<p>Здесь вы можете:<br>- Найти информацию о персонажах и лоре<br>- посмотреть арты персонажей (больше<br>артов в вк группе)<br><br>Станьте частью этого загадочного мира</p>
 				</form>
 				</div>
 			</div>
@@ -100,11 +101,11 @@
 	</div>
 </div>
 
-<div class="popup-1">
+<div class="popup-1" id="my-popup">
 	<div class="popup-dialog-1">
 		<div class="popup-content-1">
 			<div class="popup-close-1">
-				<button class="popup-close-btn-1">&times;</button>
+				<button class="popup-close-btn-1" id="close-my-popup">&times;</button>
 				<h4 class="popup-header-1">
 					Я Мюис - воплощение этого мира <!--Сделать эффект при наведении (плавное увеличение)-->
 				</h4>
@@ -127,24 +128,25 @@
 
  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script>
+
+
  
   $(document).ready(function() {
     	$('.popup-btn').on('click', function(event) {
-    		event.preventDefault();
-    		$('.popup').fadeIn();
+    		document.getElementById('my-popup-1').classList.add('open')
     	});
     	$('.popup-close-btn').on('click', function(event) {
-    		event.preventDefault();
-    		$('.popup').fadeOut();
+    		document.getElementById('my-popup-1').classList.remove('open')
     	});
+    	
     	$('.popup-btn-1').on('click', function(event) {
-    		event.preventDefault();
-    		$('.popup-1').fadeIn();
+    		document.getElementById('my-popup').classList.add('open')
     	});
     	$('.popup-close-btn-1').on('click', function(event) {
-    		event.preventDefault();
-    		$('.popup-1').fadeOut();
+    		document.getElementById('my-popup').classList.remove('open')
     	});
+
+
     	$('.popup-btn-3').on('click', function(event) {
     		event.preventDefault();
     		$('.logo').fadeIn();

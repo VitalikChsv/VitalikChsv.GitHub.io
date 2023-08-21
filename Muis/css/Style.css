@@ -1,0 +1,243 @@
+
+@font-face {
+    font-family: 'BONY';
+    src: url('BONY.eot');
+    src: url('../fonts/BONY.eot') format('embedded-opentype'),
+        url('../fonts/BONY.woff2') format('woff2'),
+        url('../fonts/BONY.woff') format('woff'),
+        url('../fonts/BONY') format('truetype'),
+        url('../fonts/BONY') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+background-color: #151719;
+font-family: 'BONY', sans-serif;
+hyphens: auto;
+}
+
+.container {
+    max-width: 1500px;
+}
+
+.btn {
+	display: inline-block;
+background-color: #23282B;
+color: #9FE2BF;
+transition: all 0.2s;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #2F4538;
+	filter: brightness(400%);
+}
+
+.row-0 {
+	background-color: #5F9EA0;
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+.row-1 {
+	margin-top: 1rem;
+    background-color: #5F9EA0;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+.row-2 {
+	color: #d0ded4;
+	font-size: 6.8rem;
+	text-shadow: #637169 0 0 0.4rem;
+}
+.row-3 {
+	 background-color: #5F9EA0;
+	 border-radius: 6px;
+	margin-top: 6rem;
+	color: #d0ded4;
+	font-size: 1.7rem;
+}
+.links {
+	background-color: #23282B ;
+	border-radius: 3px;
+}
+
+.row-4 {
+	padding: 1rem;
+}
+.btn-4 {
+	font-size: 4rem;
+	margin-top: 2rem;
+}
+.br-0 {
+	color: #5770e0;
+}
+.br{
+	color: #5770e0;
+}
+
+h4 {
+	font-size: 2rem;
+	margin-top: 0.5rem;
+}
+.popup {
+display: grid;
+align-items: center;
+justify-content: center;
+overflow: auto;
+color: #151719;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 9;
+background-color: rgba(0, 0, 0, .5);
+visibility: hidden;
+opacity: 0;
+}
+.form {
+	font-size: 1.7rem;
+	padding: 0;
+	margin-top: 3rem;
+	text-align: left;
+	margin-right: 0.7rem;
+}
+.popup-content {
+	border-radius: 0.5rem;
+	border: solid #9FE2BF;
+	position: fixed;
+    background-color: #151719;
+	left: 50%;
+	top: 10%;
+	transform: translateX(-50%);
+	padding: 11rem 20rem;
+}
+.popup-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0rem 0.5rem;
+	border: none;
+	text-align: center;
+	font-size: 3rem;
+	background-color: transparent;
+	color: #9FE2BF;
+}
+.popup-close-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0rem 0.5rem;
+	border: none;
+	text-align: center;
+	font-size: 3rem;
+	color: #9FE2BF;
+	background-color: transparent;
+}
+.popup-1 {
+display: grid;
+align-items: center;
+justify-content: center;
+overflow-y: auto;
+color: #9FE2BF;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 9;
+background-color: rgba(0, 0, 0, .5);
+visibility: hidden;
+opacity: 0;
+}
+.form-1 {
+	text-align: center;
+	margin-right: 0.7rem;
+}
+.popup-content-1 {
+	position: relative;
+	text-align: center;
+	max-width: 39rem;
+	padding: 0 2rem;
+	z-index: 1;
+	background-color: #151719;
+	border: solid #9FE2BF;
+	border-radius: 0.5rem;
+	}
+.popup-close-btn-1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0rem 0.5rem;
+	border: none;
+	text-align: center;
+	font-size: 2.4rem;
+	color: #9FE2BF;
+	background-color: transparent;
+}
+.popup-header-1 {
+	margin-top: 2rem;
+}
+.form-2 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.dropdown-content a{
+background-color: #2b2e2c;
+color: #9FE2BF;
+transition: all 0.2s;
+position: relative;
+border: 0.1rem solid #9FE2BF;
+text-align: center;
+font-size: 1rem;
+display: block;
+width: auto;
+border-radius: 5px;
+display: block;
+list-style: none;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content  {
+	min-width: 6rem;
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+ a:active,
+a:hover,
+a {
+	color: #9FE2BF;
+	list-style: none;
+	text-decoration: none;
+}
+a:hover {
+	color: #acb78e;
+}
+.dropdown:hover .dropdown-content {display: block;}
+
+@media (max-width: 1000px) {
+.btn-4 {
+	display: inline-block;
+	text-align: center;
+}
+}
+
+.popup-1.open {
+	visibility: visible;
+	opacity: 1;
+}
+.popup.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+@media (max-width: 470px) {
+	.btn-2, .popup-btn {
+margin-top: 1.5rem;
+}
+}

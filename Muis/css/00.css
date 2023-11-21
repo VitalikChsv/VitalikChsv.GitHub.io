@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Bad Comic';
+    src: url('../fonts/BadComic-Italic.eot');
+    src: url('../fonts/BadComic-Italic.eot') format('embedded-opentype'),
+        url('../fonts/BadComic-Italic.woff2') format('woff2'),
+        url('../fonts/BadComic-Italic.woff') format('woff'),
+        url('../fonts/BadComic-Italic.ttf') format('truetype'),
+        url('../fonts/BadComic-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+body {
+background: url(../img/fons5.png);
+background-attachment: fixed;
+font-family: 'Bad Comic', sans-serif;
+hyphens: auto;
+}
+
+.container {
+    max-width: 1500px;
+}
+.header {
+    padding: 1rem;
+    border: 0.1rem solid #FADFAD;
+    color: #FF7F50;
+    margin-top: 2rem;
+    background: rgba(59, 60, 54, 0.9);
+}
+.info {
+    padding: 1rem;
+    border: 0.1rem solid #FADFAD;
+    margin-top: 1rem;
+    background-color: #FADFAD; 
+    background: rgba(59, 60, 54, 0.9);
+}
+
+.imgc {
+    display: inline-block;
+
+}
+
+.popup {
+display: grid;
+align-items: center;
+justify-content: center;
+overflow: auto;
+color: #FADFAD;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 9;
+background-color: rgba(0, 0, 0, .5);
+visibility: hidden;
+opacity: 0;
+}
+
+.form {
+    font-size: 1.7rem;
+    padding: 0;
+    margin-top: 3rem;
+   text-align: justify;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.popup-content {
+    border-radius: 0.5rem;
+    border: solid #FADFAD;
+    position: fixed;
+    background-color: #343036;
+    background: rgba(59, 60, 54, 1);
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    padding: 21rem 22rem;
+}
+.popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #FADFAD;
+}
+.popup-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+    color: #FADFAD;
+    background-color: transparent;
+}
+
+.popup-1 {
+display: grid;
+align-items: center;
+justify-content: center;
+overflow-y: auto;
+color: #FADFAD;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 9;
+background-color: rgba(0, 0, 0, .5);
+visibility: hidden;
+opacity: 0;
+}
+.form-1 {
+    text-align: center;
+    margin-right: 0.7rem;
+}
+.popup-content-1 {
+    position: relative;
+    text-align: center;
+    max-width: 39rem;
+    padding: 0 2rem;
+    z-index: 1;
+    background-color: #343036;
+    background: rgba(59, 60, 54, 1);
+    border: solid #FADFAD;
+    border-radius: 0.5rem;
+    }
+.popup-close-btn-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #FADFAD;
+    background-color: transparent;
+}
+.popup-header-1 {
+    margin-top: 2rem;
+}
+.form-2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.row-0, .row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12, .row-13, .row-14 {
+     padding: 1rem;
+    border: 0.1rem solid #FADFAD;
+    margin-top: 2rem;
+    background-color: #FFDB8B;
+    background: rgba(59, 60, 54, 0.9);
+}
+.tx-1 {
+    display: inline;
+    border-bottom: 3px solid #FF7F50;
+    font-size: 1.7rem;
+    color: #FF7F50;
+}
+.tx-2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #FADFAD;
+    text-align: justify;
+}
+.btn {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+background-color: #3B3C36;
+color: #FF7F50;
+transition: all 0.2s;
+margin-bottom: 2rem;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #3B3C36;
+    filter: brightness(400%);
+}
+ a:active,
+a:hover,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+a:hover {
+    color: #e5aa2c;
+}
+
+@media (max-width: 1000px) {
+.row-3 {
+    display: block;
+}
+.btn-4 {
+    display: inline-block;
+    text-align: center;
+}
+}
+
+.popup-1.open {
+    visibility: visible;
+    opacity: 1;
+}
+.popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 470px) {
+    .btn-2, .popup-btn {
+margin-top: 1.5rem;
+}
+}

@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../fonts/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook.eot') format('embedded-opentype'),
+        url('../fonts/BebasNeueBook.woff2') format('woff2'),
+        url('../fonts/BebasNeueBook.woff') format('woff'),
+        url('../fonts/BebasNeueBook.ttf') format('truetype'),
+        url('../fonts/BebasNeueBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot') format('embedded-opentype'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff'),
+        url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+        url('../fonts/BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+background-color: #18171C;
+font-family: 'Bebas Neue Book', sans-serif;
+hyphens: auto;
+}
+
+.container {
+    max-width: 1500px;
+}
+
+.info {
+    padding: 1rem;
+    border: 0.1rem solid #eaa9ad;
+    margin-top: 1rem;
+}
+
+.img1 {
+margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin-top: 1rem;
+}
+
+
+.popup {
+display: grid;
+align-items: center;
+justify-content: center;
+overflow: auto;
+color: #eaa9ad;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 9;
+background-color: rgba(0, 0, 0, .5);
+visibility: hidden;
+opacity: 0;
+}
+
+.form {
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 3rem;
+   text-align: justify;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.popup-content {
+    border-radius: 0.5rem;
+    border: solid #eaa9ad;
+    position: fixed;
+    background-color: #343036;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    padding: 21rem 22rem;
+}
+.popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #eaa9ad;
+}
+.popup-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+    color: #eaa9ad;
+    background-color: transparent;
+}
+
+.popup-1 {
+display: grid;
+align-items: center;
+justify-content: center;
+overflow-y: auto;
+color:#AFEEEE;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 9;
+background-color: rgba(0, 0, 0, .5);
+visibility: hidden;
+opacity: 0;
+}
+.form-1 {
+    text-align: center;
+    margin-right: 0.7rem;
+}
+.popup-content-1 {
+    position: relative;
+    text-align: center;
+    max-width: 39rem;
+    padding: 0 2rem;
+    z-index: 1;
+    background-color: #343036;
+    border: solid #AFEEEE;
+    border-radius: 0.5rem;
+    }
+.popup-close-btn-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #AFEEEE;
+    background-color: transparent;
+}
+.popup-header-1 {
+    margin-top: 2rem;
+}
+.form-2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-2 {
+    margin: 0;
+    color: #ebbaef;
+    font-size: 1.5rem;
+}
+
+.imgc {
+    display: inline-block;
+
+}
+.row-0, .row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9, .row-10, .row-11, .row-12 {
+     padding: 1rem;
+    border: 0.1rem solid #eaa9ad;
+    margin-top: 2rem;
+}
+.tx-1 {
+    display: inline;
+    border-bottom: 3px solid #eaa9ad;
+    font-size: 3rem;
+    color: #eaa9ad;
+}
+.tx-2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #eaa9ad;
+    text-align: justify;
+}
+.btn {
+    font-size: 2rem;
+    margin-top: 2rem;
+background-color: #343036;
+color: #eaa9ad;
+transition: all 0.2s;
+margin-bottom: 2rem;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #343137;
+    filter: brightness(400%);
+}
+ a:active,
+a:hover,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+.row-3 {
+    display: block;
+}
+.btn-4 {
+    display: inline-block;
+    text-align: center;
+}
+}
+
+.popup-1.open {
+    visibility: visible;
+    opacity: 1;
+}
+.popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 470px) {
+    .btn-2, .popup-btn {
+margin-top: 1.5rem;
+}
+}
